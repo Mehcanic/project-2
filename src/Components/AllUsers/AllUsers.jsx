@@ -27,8 +27,6 @@ const AllUsers = () => {
     getRandomText()
   }, [])
   
-
-
   function getUserData() {
     return persons.map((person) => {
       return (
@@ -40,31 +38,17 @@ const AllUsers = () => {
               </div>
               <div className='name-container'>
                 <h2>{person.name.first} {person.name.last}</h2>
-                {/* <p className='friends-number'>Firends number</p>
-                <p className='friends-pictures'>Friends pictures</p> */}
                 <p>E-mail: {person.email}</p>
                 <p>Phone: {person.phone}</p>
                 <p>Mobile: {person.cell}</p>
               </div>                
-          </div>
-          <div className='right-container'>
-            <div className='buttons-container flex-r-center'>
-              {/* <Likes className="likes" /> */}
-              <Link to="allcomments"><ContactButton /></Link>
             </div>
-          </div>
-        </div> 
-
-          {/* <Likes className="likes" />
-          <img src={person.picture.large} alt="user" key={person.id} />
-          <div className="name-container">
-            <p>Title: {person.name.title}</p>
-            <p>First name: {person.name.first}</p>
-            <p>Surename: {person.name.last}</p>
-           
-            <ContactButton />
-          </div> */}
-          
+            <div className='right-container'>
+              <div className='buttons-container flex-r-center'>
+                <Link to="allcomments"><ContactButton /></Link>
+              </div>
+            </div>
+          </div> 
         </div>
       )
     })
