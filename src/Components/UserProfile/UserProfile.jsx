@@ -17,7 +17,7 @@ const UserProfile = () => {
   
 
   const getRandomText = async () => {
-    const response = await fetch("https://baconipsum.com/api/?type=meat-and-filler&sentences=3")
+    const response = await fetch("https://baconipsum.com/api/?type=meat-and-filler&sentences=20")
     const data = await response.json()
     setComment(data)
   }
@@ -27,6 +27,7 @@ const UserProfile = () => {
     const data = await response.json()
     setPersons(data.results)
   }
+  
 
   React.useEffect(() => {
     getPersons()
@@ -59,7 +60,7 @@ const UserProfile = () => {
 
         <div className='details-container'>        
           <div className='info'>
-            <h3>Info</h3>
+            <h2>Info</h2>
             <div className='info-cell'>
               <p>Street:</p> <p><span>{person.location.street.number} {person.location.street.name}</span></p>
             </div>
@@ -96,7 +97,8 @@ const UserProfile = () => {
         
           <div className='timeline-container'>
             <div>
-              <h1>Map</h1>
+              <h2>Most recent blog post</h2>
+              <p>{comment}</p>
             </div>
           </div>    
         </div>

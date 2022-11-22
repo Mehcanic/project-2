@@ -51,7 +51,7 @@ const Home = () => {
             <div className='news-container'>
               <div className='news-logo'>
                 <img src={news.imageUrl} width="100"/>
-                <Likes className="likes" style={{margin: 0}}/>
+                <Likes className="likes" />
               </div>
               <div className='news-content'>
                 <h2>{news.title}</h2>
