@@ -1,18 +1,20 @@
-# Concepts
+### https://randomuser.me/api/
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Create, Read, Update, and Delete comments and replies
-- Upvote and downvote comments
-- Bonus: If you're building a purely front-end project, use localStorage to save the current state in the browser that persists when the browser is refreshed.
-- Bonus: Instead of using the createdAt strings from the data.json file, try using timestamps and dynamically track the time since the comment or reply was posted.
+## Overview
 
-# Expected behaviour
+### The challenge
 
-- First-level comments should be ordered by their score, whereas nested replies are ordered by time added.
-- Replying to a comment adds the new reply to the bottom of the nested replies within that comment.
-- A confirmation modal should pop up before a comment or reply is deleted.
-- Adding a new comment or reply uses the currentUser object from within the data.json file.
-- You can only edit or delete your own comments and replies.
+The challange was to find proper API for this project.
 
-# https://randomuser.me/api/
+### Built with
+
+- React created with Vite.
+- CSS to style application
+
+### What I learned
+
+To create proper structure of React application, use of Style Component and basic use of APIs.
+
+### Continued development
+
+This app will have to be re-written when I will learn how to create my own API or using JSON file database.

@@ -73,7 +73,7 @@ const UserProfile = () => {
             <div className='info-cell'>
               <p>Postcode:</p> <p><span>{person.location.postcode}</span></p>
             </div>
-            <div className='info-cell'>
+            <div className='info-cell email-container'>
               <p>E-mail:</p> <p><span>{person.email}</span></p>
             </div>
               {/* <p>{person.location.coordinates.latitude}</p>
