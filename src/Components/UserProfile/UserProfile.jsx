@@ -23,7 +23,7 @@ const UserProfile = () => {
   }
 
   const getPersons = async () => {
-    const response = await fetch(`https://randomuser.me/api/?nat=gb&results=1`)
+    const response = await fetch(`https://randomuser.me/api/?nat=EU&results=1`)
     const data = await response.json()
     setPersons(data.results)
   }

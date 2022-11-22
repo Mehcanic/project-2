@@ -19,7 +19,7 @@ const AllUsers = () => {
   }
 
   const getPersons = async () => {
-    const response = await fetch(`https://randomuser.me/api/?nat=&results=100`)
+    const response = await fetch(`https://randomuser.me/api/?nat=EU&results=100`)
     const data = await response.json()
     setPersons(data.results)
   }
@@ -97,18 +97,3 @@ const AllUsers = () => {
 
 
 export default AllUsers
-
-          {/* <div className='location-container'> */}
-            {/* <p>Street: {person.location.street.number} {person.location.street.name}</p> */}
-            {/* <p>City: {person.location.city}</p> */}
-            {/* <p>State: {person.location.state}</p> */}
-            {/* <p>Postcode: {person.location.postcode}</p> */}
-            {/* <p>{person.location.coordinates.latitude}</p> */}
-            {/* <p>{person.location.coordinates.longitude}</p> */}
-          {/* </div> */}
-
-          {/* <p>Age: {person.dob.age}</p> */}
-          {/* <p>Nationality: {person.nat}</p> */}
-          {/* <p >Customer since {registeredDate}</p> */}
-          {/* Change reply button to contact button */}
-          {/* <p className="comment">{comment}</p> */}
