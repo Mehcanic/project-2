@@ -2,20 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../Reply/ContactButton'
-
-import ReplyButton from '../Reply/ContactButton'
-import Likes from '../Likes/Likes'
 import ContactButton from '../Reply/ContactButton'
 import '../../App.css'
 import './UserProfile.css'
 import '../GeneralStyle/UtilityClasses.css'
-// import UserData from '../../data.json'
 
 const UserProfile = () => {
   const [persons, setPersons] = React.useState(null)
   const [comment, setComment] = React.useState(null)
   
-
   const getRandomText = async () => {
     const response = await fetch("https://baconipsum.com/api/?type=meat-and-filler&sentences=20")
     const data = await response.json()
@@ -28,7 +23,6 @@ const UserProfile = () => {
     setPersons(data.results)
   }
   
-
   React.useEffect(() => {
     getPersons()
     getRandomText()
@@ -46,13 +40,10 @@ const UserProfile = () => {
               </div>
               <div className='name-container'>
                 <h2>{person.name.title} {person.name.first} {person.name.last}</h2>
-                {/* <p className='friends-number'>Firends number</p>
-                <p className='friends-pictures'>Friends pictures</p> */}
               </div>                
           </div>
           <div className='right-container'>
             <div className='buttons-container flex-r-center'>
-              {/* <Likes className="likes" /> */}
               <Link to="allcomments"><ContactButton /></Link>
             </div>
           </div>
@@ -76,8 +67,6 @@ const UserProfile = () => {
             <div className='info-cell email-container'>
               <p>E-mail:</p> <p><span>{person.email}</span></p>
             </div>
-              {/* <p>{person.location.coordinates.latitude}</p>
-              <p>{person.location.coordinates.longitude}</p> */}
             <div className='info-cell'>
               <p>Phone:</p> <p><span>{person.phone}</span></p>
             </div>
@@ -102,9 +91,6 @@ const UserProfile = () => {
             </div>
           </div>    
         </div>
-            {/* Change reply button to contact button */}
-            
-            {/* <p className="comment">{comment}</p> */}
       </div>
     )
   })
@@ -127,7 +113,6 @@ const UserProfile = () => {
 
   return (
     <>
-    {/* Use GRID */}
       <>
         {getUserData()}
       </>

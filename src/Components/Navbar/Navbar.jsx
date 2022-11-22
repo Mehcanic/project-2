@@ -12,7 +12,6 @@ const Navbar = () => {
         <Link to="/" className="navbar-item">Home</Link>
         <Link to="allusers" className="navbar-item">All Users</Link>
         <Link to="userprofile" className="navbar-item">User Profile</Link>
-        {/* <Link to="allcomments" className="navbar-item">Contact user</Link>  */}
       </nav>
     </header>
     </>

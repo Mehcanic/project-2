@@ -1,16 +1,10 @@
 import React from 'react'
 import Likes from '../Likes/Likes'
-
-
 import './Homes.css'
 
 const Home = () => {
 
   const [carNews, setCarNews] = React.useState(null)
-  // const [businessNews, setBusinessNews] = React.useState(null)
-  // const [politicsNews, setPoliticsNews] = React.useState(null)
-  // const [entertainmentNews, setEntertainmentNews] = React.useState(null)
-
 
   const getCarNewsData = async () => {
     const response = await fetch("https://inshorts.deta.dev/news?category=automobile")
@@ -18,29 +12,8 @@ const Home = () => {
     setCarNews(data)
   }
 
-  // const getBusinessNewsData = async () => {
-  //   const response = await fetch("https://inshorts.deta.dev/news?category=business")
-  //   const data = await response.json()
-  //   setBusinessNews(data)
-  // }
-
-  // const getPoliticsNewsData = async () => {
-  //   const response = await fetch("https://inshorts.deta.dev/news?category=politics")
-  //   const data = await response.json()
-  //   setPoliticsNews(data)
-  // }
-
-  // const getEntertainmentNewsData = async () => {
-  //   const response = await fetch("https://inshorts.deta.dev/news?category=entertainment")
-  //   const data = await response.json()
-  //   setEntertainmentNews(data)
-  // }
-
   React.useEffect(() => {
     getCarNewsData()
-    // getBusinessNewsData()
-    // getPoliticsNewsData()
-    // getEntertainmentNewsData()
   }, [])
 
   const getCarNews = () => {
@@ -65,7 +38,6 @@ const Home = () => {
       )
     })
   }
-
 
   if (!carNews) {
     return <h1>Loading news...</h1>

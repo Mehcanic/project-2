@@ -2,8 +2,6 @@ import React from 'react'
 import '../../App.css'
 import './Likes.css'
 
-
-
 const Likes = () => {
   const [counter, setCounter] = React.useState(0)
   const [didLikeComment, setDidLikeComment] = React.useState(false)
@@ -21,8 +19,6 @@ const Likes = () => {
       setCounter(counter - 1)
     }
   }
-
-
   
   return (
     <div className="likes-button">

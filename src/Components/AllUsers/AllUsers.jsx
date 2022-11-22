@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Likes from '../Likes/Likes'
 import ContactButton from '../Reply/ContactButton'
-import './AllUsers.css'
 import '../../App.css'
 
 

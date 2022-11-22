@@ -27,12 +27,10 @@
 }
 
 body {
-  /* background-color: #ddd; */
   font-family: var(--font-family);
   width: 100%;
 }
 
 #root {
-  /* width: 730px; */
   margin: 0 auto;
 }
