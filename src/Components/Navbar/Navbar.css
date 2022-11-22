@@ -1,0 +1,18 @@
+header {
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-very-light-gray);
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: var(--color-primary-blue);
+  font-weight: var(--font-w-2);
+}

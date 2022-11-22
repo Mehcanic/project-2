@@ -1,0 +1,28 @@
+.likes-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--color-very-light-gray);
+}
+
+button {
+  background-color: var(--color-very-light-gray);
+  color: var(--color-active-blue);
+  border: none;
+  font-size: 1rem;
+  padding: 7px;
+}
+/* 
+button:hover {
+  font-size: 1.2rem;
+} */
+
+p {
+  color: var(--color-primary-blue);
+  font-weight: var(--font-w-2);
+}

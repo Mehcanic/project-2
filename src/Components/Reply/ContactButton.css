@@ -1,0 +1,20 @@
+.reply-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--color-white);
+  font-family: var(--font-family);
+  width: 100px;
+  height: 24px;
+}
+
+.reply-button img {
+  width: 24px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: var(--font-w-2);
+}
