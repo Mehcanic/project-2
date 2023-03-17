@@ -63,7 +63,7 @@ const AllUsers = () => {
   if(!comment) {
     return (
       <>
-        <p>Loading comments</p>
+        <p>Loading users</p>
       </>
     )
   }
